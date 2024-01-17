@@ -1,0 +1,35 @@
+@mixin screen-720 {
+    @media (min-width: 720px) {
+        @content
+    }
+};
+@mixin screen-768 {
+    @media (min-width: 768px) {
+        @content
+    }
+};
+@mixin screen-960 {
+    @media (min-width: 960px) {
+        @content
+    }
+};
+@mixin screen-992 {
+    @media (min-width: 992px) {
+        @content
+    }
+};
+@mixin screen-1140 {
+    @media (min-width: 1140px) {
+        @content
+    }
+};
+@mixin screen-1320 {
+    @media (min-width: 1320px) {
+        @content
+    }
+};
+@mixin screen-1680 {
+    @media (min-width: 1680px) {
+        @content
+    }
+};

@@ -1,0 +1,26 @@
+@mixin display-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+html, body {
+    @include font-default;
+    @include colors-default;
+}
+
+.hide {
+    display: none;
+}
+
+.menu-badge {
+    @include colors-theme-with-border;
+    @include display-flex-center;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+}

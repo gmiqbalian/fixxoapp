@@ -1,0 +1,69 @@
+.category-container {
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    @include screen-960 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }    
+    
+    .offer-box {
+        background: $color-light-3;
+        background: linear-gradient(90deg, $color-light-3 0%, $color-light-2 100%);
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        @include display-flex-center;
+        
+        .text {
+            border: 6px solid $color-theme;
+            height: 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            @include display-flex-center;
+            flex-direction: column;
+
+            .btn-black-white {
+                padding: 15px 40px;
+            }
+            
+            @include screen-960 {
+
+            }
+
+            .title-1 {
+                @include font-title-1;
+                font-size: 50px;
+
+                @include screen-960 {
+                    @include font-title-2;
+                }
+                
+            }
+            .title-2 {
+                @include font-title-3;
+                line-height: 1.2;
+                font-weight: 100;
+                font-size: large;
+                
+                @include screen-960 {
+                    @include font-default
+                }
+            }            
+        }        
+    }   
+}

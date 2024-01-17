@@ -1,0 +1,110 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: $bg-light-1;
+    
+    .container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;      
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "logo toggleicon"
+                             "menu menu";
+        @include screen-960 {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "logo menu menu";
+        }
+    }
+    
+    .links {      
+        @include screen-960 {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .link {
+            color: $color-dark-2;
+            font-weight: 500;
+            text-decoration: none;           
+            margin: 10px 12px;
+            display: block;
+            transition: color 0.15s;
+
+            &:hover,
+            &:active {
+                color: $color-theme;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .icons {
+        @include display-flex-center;
+        
+        @include screen-960 {
+            justify-content: flex-end;
+        }
+
+        .link {
+            position: relative;
+            height: 36px;
+            width: 36px;
+            @include display-flex-center;
+            @include colors-default;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 0 5px 2px $color-shadow-1;
+            margin-left: 1rem;
+            transition: background-color 0.25s, color 0.20s;
+
+            &:hover {
+                @include colors-dark;
+                text-decoration: none;
+            }
+        }   
+    }
+
+    #toggle-icon {
+        grid-area: toggleicon;   
+        justify-content: flex-end;
+
+        @include screen-960 {
+            display: none;
+        }
+    }
+
+    #logo {
+        grid-area: logo;
+        font-size: 35px;
+        font-weight: 700;
+        text-decoration: none;
+        color: $color-dark-2;
+    }
+
+    #menu {
+        grid-area: menu;
+        grid-template-areas: "menulinks"
+                             "menuicons";
+        @include screen-960 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "menulinks menuicons";
+        }
+    }
+
+    #menu-links {
+        grid-area: menulinks;
+    }
+
+    #menu-icons {
+        grid-area: menuicons;
+        margin-top: 40px;
+
+        @include screen-960 {
+            margin-top: 0;
+        }
+    }
+}

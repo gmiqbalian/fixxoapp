@@ -1,0 +1,20 @@
+//basics
+@import './basics/fonts';
+@import './basics/colors';
+@import './basics/media';
+@import './basics/utilities';
+@import './basics/buttons';
+
+//components
+@import '../../components/fragments/BreadCrumb/breadcrumb';
+@import '../../components/fragments/FeaturedProducts/featuredProducts';
+@import '../../components/fragments/ProductsGrid/productGrid';
+@import '../../components/fragments/ProductCard/productCard';
+@import '../../components/fragments/Categories/categories';
+@import '../../components/fragments/Support/websupport';
+@import '../../components/fragments/GoogleMap/googlemap';
+@import '../../components/fragments/ContactForm/contactForm';
+@import '../../components/fragments/Showcase/showcase';
+@import '../../components/fragments/Header/header';
+@import '../../components/fragments/Footer/footer';
+@import '../scss/common/productSection';

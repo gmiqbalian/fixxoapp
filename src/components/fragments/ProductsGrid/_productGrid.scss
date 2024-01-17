@@ -1,0 +1,15 @@
+.products-grid .container .collection{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    @include screen-720 {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include screen-960 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include screen-1140 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

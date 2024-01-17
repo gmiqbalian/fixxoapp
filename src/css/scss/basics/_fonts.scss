@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+$font-poppins: 'Poppins', sans-serif;
+$font-standard: 16px;
+$font-lineheight-small: 1;
+$font-lineheight-standard: 1.5;
+
+@mixin font-default {
+    font-family: $font-poppins;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin font-title-1 {
+    font-family: $font-poppins;
+    font-size: 2.5em;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 0.6em;
+
+    @include screen-960 {
+        font-size: 3em;
+    }
+    @include screen-1140 {
+        font-size: 4.063em;
+    }
+}
+@mixin font-title-2 {
+    font-family: $font-poppins;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.6em;
+
+    @include screen-960 {
+        font-size: 1.9em;
+    }
+    @include screen-1140 {
+        font-size: 2.188em;
+    }
+}
+@mixin font-title-3 {
+    font-family: $font-poppins;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+
+    @include screen-960 {
+        font-size: 1.1em;
+    }
+    @include screen-1140 {
+        font-size: 1.250em;
+    }
+}
+
