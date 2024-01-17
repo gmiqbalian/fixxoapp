@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/fixxoapp/static/css/main.1548a36c.css",
-    "main.js": "/fixxoapp/static/js/main.d7b4316b.js",
+    "main.js": "/fixxoapp/static/js/main.7f915606.js",
     "static/media/showcase-img.png": "/fixxoapp/static/media/showcase-img.284ad98c642f9a2fa478.png",
     "static/media/party-style.png": "/fixxoapp/static/media/party-style.e6b18d466812071d23e7.png",
     "static/media/office-style.png": "/fixxoapp/static/media/office-style.98d459cd73f7807a85b8.png",
     "index.html": "/fixxoapp/index.html",
     "main.1548a36c.css.map": "/fixxoapp/static/css/main.1548a36c.css.map",
-    "main.d7b4316b.js.map": "/fixxoapp/static/js/main.d7b4316b.js.map"
+    "main.7f915606.js.map": "/fixxoapp/static/js/main.7f915606.js.map"
   },
   "entrypoints": [
     "static/css/main.1548a36c.css",
-    "static/js/main.d7b4316b.js"
+    "static/js/main.7f915606.js"
   ]
 }
